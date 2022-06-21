@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Lista">
+
+
+
+    <TextView
+        android:id="@+id/title_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_lista"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/containerComponents2"
+        style="@style/ContainerComponents"
+        app:layout_constraintTop_toBottomOf="@id/title_lista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="@id/containerComponents2"
+        app:layout_constraintStart_toStartOf="@id/containerComponents2"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents2"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:text="@string/table_musica1"
+                android:padding="20dip"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/table_musica2"
+                android:padding="20dip"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/table_musica3"
+                android:padding="20dip"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/table_musica4"
+                android:padding="20dip"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add"
+        style="@style/Button2"
+        android:layout_width="250dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="80dp"
+        android:text="Adicionar Música"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sair"
+        style="@style/Button3"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="170dp"
+        android:text="SAIR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

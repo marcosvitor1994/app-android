@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MeuAplicativo</string>
+
+    <string name="entrar">Entrar</string>
+    <string name="title_cadastro">Nova música</string>
+    <string name="title_lista">Músicas:</string>
+
+
+
+    <string name="table_musica1">O que pensa que eu sou?</string>
+    <string name="table_musica2">Joelma</string>
+    <string name="table_musica3">Brasília Amarela</string>
+    <string name="table_musica4">4x4</string>
+
+
+    <string name="table_descricao1">Banda Djavu</string>
+    <string name="table_descricao2">ao-vivo</string>
+    <string name="table_descricao3">Mamonas Assassinas</string>
+    <string name="table_descricao4">MC Catra</string>
+</resources>
